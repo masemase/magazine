@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning Hacker News Edition — 2026-04-22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --paper:#f4efe8; --ink:#111; --muted:rgba(0,0,0,.65); }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter, system-ui, sans-serif; }
+a { color:inherit; }
+.cover { padding:5rem 4rem 3rem; border-bottom:1px solid rgba(0,0,0,.08); background:linear-gradient(180deg,#fbf6ef 0%, #f4efe8 100%); }
+.eyebrow { display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1rem; }
+.pill { border:2px solid rgba(0,0,0,.18); border-radius:999px; padding:.45rem .8rem; font-size:1rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+.cover h1 { font-family:Fraunces, serif; font-size:clamp(4rem,9vw,8rem); line-height:.92; margin:0 0 1rem; letter-spacing:-.045em; max-width:11ch; }
+.cover .deck { font-size:clamp(1.35rem,2.5vw,2.1rem); line-height:1.35; max-width:60rem; margin:0 0 2rem; color:var(--muted); }
+.cover-grid { display:grid; grid-template-columns:2fr 1fr; gap:2rem; align-items:start; }
+.cover .date { font-size:1.15rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+.statbox { border-left:4px solid #111; padding-left:1rem; }
+.statbox .big { font-family:Fraunces, serif; font-size:clamp(2.5rem,4vw,4rem); line-height:.9; }
+.statbox .small { font-size:1.05rem; text-transform:uppercase; letter-spacing:.08em; font-weight:800; opacity:.75; }
+.bestrail { margin-top:1.5rem; padding-top:1.2rem; border-top:1px solid rgba(0,0,0,.12); }
+.bestrail h3 { margin:0 0 1rem; font-size:1rem; letter-spacing:.12em; text-transform:uppercase; }
+.bestrail ul { list-style:none; padding:0; margin:0; display:grid; gap:1rem; }
+.bestrail li { display:grid; grid-template-columns:auto 1fr; gap:.9rem; align-items:start; }
+.best-num { font-family:Fraunces, serif; font-size:2rem; line-height:.9; }
+.best-title { font-size:1.1rem; font-weight:800; line-height:1.25; }
+.best-tag { font-size:.95rem; text-transform:uppercase; letter-spacing:.08em; opacity:.7; margin-top:.2rem; }
+.spread { min-height:100vh; display:grid; grid-template-columns:minmax(120px,220px) 1fr; gap:2rem; padding:4rem; background:var(--bg); color:var(--fg); border-top:1px solid rgba(0,0,0,.08); position:relative; overflow:hidden; }
+.spread::after { content:''; position:absolute; inset:auto -10% -20% auto; width:40vw; height:40vw; border-radius:50%; background:rgba(255,255,255,.06); filter:blur(10px); pointer-events:none; }
+.num { font-family:Fraunces, serif; font-size:clamp(5rem,14vw,12rem); line-height:.82; opacity:.92; letter-spacing:-.05em; }
+.content { max-width:58rem; align-self:center; position:relative; z-index:1; }
+.kicker { font-size:1.05rem; font-weight:800; text-transform:uppercase; letter-spacing:.14em; margin-bottom:1rem; opacity:.82; }
+.stamp { display:inline-block; transform:rotate(-4deg); margin-bottom:1rem; border:3px solid currentColor; padding:.35rem .7rem; font-size:1rem; font-weight:900; letter-spacing:.12em; text-transform:uppercase; }
+.content h2 { font-family:Fraunces, serif; font-size:clamp(2.8rem,5.4vw,5.8rem); line-height:.94; margin:.2rem 0 1.2rem; letter-spacing:-.035em; max-width:13ch; }
+.matter, .for-brandon { font-size:clamp(1.35rem,2.3vw,2rem); line-height:1.5; margin:0 0 1rem; max-width:42rem; }
+.meta { font-size:1.02rem; font-weight:800; text-transform:uppercase; letter-spacing:.12em; margin-top:1.6rem; opacity:.75; }
+.link { display:inline-block; margin-top:1rem; font-size:1.2rem; font-weight:800; text-decoration:none; border-bottom:3px solid currentColor; padding-bottom:.15rem; }
+.applies { display:inline-block; margin:0 0 1rem; padding:.5rem .8rem; border:2px solid currentColor; border-radius:999px; font-size:1rem; font-weight:900; text-transform:uppercase; letter-spacing:.08em; }
+.footer { padding:3rem 4rem 5rem; font-size:1.1rem; color:var(--muted); }
+@media (max-width: 900px) { .cover-grid { grid-template-columns:1fr; } .spread { grid-template-columns:1fr; } .num { font-size:5rem; } .cover, .spread, .footer { padding:2rem 1.25rem; } }
+</style>
+</head>
+<body>
+  <header class="cover">
+    <div class="eyebrow">
+      <div class="pill">Morning Hacker News Edition</div>
+      <div class="pill">10 curated stories</div>
+      <div class="pill">4 directly useful</div>
+    </div>
+    <div class="cover-grid">
+      <div>
+        <div class="date">2026-04-22</div>
+        <h1>Morning Hacker News Edition</h1>
+        <p class="deck">Ten Hacker News stories filtered away from coder-insider noise and toward AI tools, creative software, privacy, weird science, and useful things you might actually care about.</p>
+      </div>
+      <div>
+        <div class="statbox">
+          <div class="small">Editor’s framing</div>
+          <div class="big">Signal over volume.</div>
+        </div>
+        <div class="bestrail">
+          <h3>Best 3 for Brandon</h3>
+          <ul><li><span class="best-num">01</span><div><div class="best-title">ChatGPT Images 2.0</div><div class="best-tag">AI tools</div></div></li><li><span class="best-num">02</span><div><div class="best-title">Meta to start capturing employee mouse movements, keystrokes for AI training</div><div class="best-tag">AI tools</div></div></li><li><span class="best-num">03</span><div><div class="best-title">Show HN: VidStudio, a browser based video editor that doesn&#x27;t upload your files</div><div class="best-tag">Actionable tech</div></div></li></ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+    <section class="spread theme-hero" style="--bg:#f7f1e8;--fg:#111111;">
+      <div class="num">01</div>
+      <div class="content">
+        <div class="stamp">EDITOR'S PICK</div>
+        <div class="kicker">AI tools</div>
+        <h2>ChatGPT Images 2.0</h2>
+        <div class="applies">Directly useful for Brandon</div>
+        <p class="matter">This is part of the AI-tools wave that actually changes what people can do, not just benchmark chest-thumping.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Direct fit for your taste: practical tech, AI, Apple, privacy, or creative software.</p>
+        <div class="meta">openai.com</div>
+        <a class="link" href="https://openai.com/index/introducing-chatgpt-images-2-0/">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-midnight" style="--bg:#10131a;--fg:#f6f2eb;">
+      <div class="num">02</div>
+      <div class="content">
+        
+        <div class="kicker">Interesting</div>
+        <h2>Framework Laptop 13 Pro</h2>
+        
+        <p class="matter">This seems like one of the more useful or interesting Hacker News stories for you today, not just coder-insider chatter.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Fits your taste because it is more interesting, useful, or unusual than the average Hacker News front-page item.</p>
+        <div class="meta">frame.work</div>
+        <a class="link" href="https://frame.work/laptop13pro">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-rose" style="--bg:#f8d7dd;--fg:#2a1016;">
+      <div class="num">03</div>
+      <div class="content">
+        
+        <div class="kicker">Actionable tech</div>
+        <h2>Laws of Software Engineering</h2>
+        
+        <p class="matter">This seems like one of the more useful or interesting Hacker News stories for you today, not just coder-insider chatter.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Fits your taste because it is more interesting, useful, or unusual than the average Hacker News front-page item.</p>
+        <div class="meta">lawsofsoftwareengineering.com</div>
+        <a class="link" href="https://lawsofsoftwareengineering.com">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-terminal" style="--bg:#0f1a12;--fg:#c9ffd6;">
+      <div class="num">04</div>
+      <div class="content">
+        
+        <div class="kicker">AI tools</div>
+        <h2>Claude Code to be removed from Anthropic&#x27;s Pro plan?</h2>
+        
+        <p class="matter">This is part of the AI-tools wave that actually changes what people can do, not just benchmark chest-thumping.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Fits your taste because it is more interesting, useful, or unusual than the average Hacker News front-page item.</p>
+        <div class="meta">bsky.app</div>
+        <a class="link" href="https://bsky.app/profile/edzitron.com/post/3mjzxwfx3qs2a">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-academic" style="--bg:#f4efe6;--fg:#1f1a16;">
+      <div class="num">05</div>
+      <div class="content">
+        
+        <div class="kicker">AI tools</div>
+        <h2>Meta to start capturing employee mouse movements, keystrokes for AI training</h2>
+        <div class="applies">Directly useful for Brandon</div>
+        <p class="matter">This is part of the AI-tools wave that actually changes what people can do, not just benchmark chest-thumping.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Direct fit for your taste: practical tech, AI, Apple, privacy, or creative software.</p>
+        <div class="meta">reuters.com</div>
+        <a class="link" href="https://www.reuters.com/sustainability/boards-policy-regulation/meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-2026-04-21/">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-signal" style="--bg:#dbe9ff;--fg:#0d1b2a;">
+      <div class="num">06</div>
+      <div class="content">
+        
+        <div class="kicker">Interesting</div>
+        <h2>SpaceX says it has agreement to acquire Cursor for $60B</h2>
+        
+        <p class="matter">This seems like one of the more useful or interesting Hacker News stories for you today, not just coder-insider chatter.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Fits your taste because it is more interesting, useful, or unusual than the average Hacker News front-page item.</p>
+        <div class="meta">twitter.com</div>
+        <a class="link" href="https://twitter.com/spacex/status/2046713419978453374">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-amber" style="--bg:#fff1cc;--fg:#2b2112;">
+      <div class="num">07</div>
+      <div class="content">
+        
+        <div class="kicker">Actionable tech</div>
+        <h2>Show HN: VidStudio, a browser based video editor that doesn&#x27;t upload your files</h2>
+        <div class="applies">Directly useful for Brandon</div>
+        <p class="matter">This lands in the creative-software bucket and sounds more useful than purely technical tooling.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Direct fit for your taste: practical tech, AI, Apple, privacy, or creative software.</p>
+        <div class="meta">vidstudio.app</div>
+        <a class="link" href="https://vidstudio.app/video-editor">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-mint" style="--bg:#dff7ec;--fg:#0f241a;">
+      <div class="num">08</div>
+      <div class="content">
+        
+        <div class="kicker">Creative software</div>
+        <h2>Making RAM at Home [video]</h2>
+        <div class="applies">Directly useful for Brandon</div>
+        <p class="matter">This lands in the creative-software bucket and sounds more useful than purely technical tooling.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Direct fit for your taste: practical tech, AI, Apple, privacy, or creative software.</p>
+        <div class="meta">youtube.com</div>
+        <a class="link" href="https://www.youtube.com/watch?v=h6GWikWlAQA">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-plum" style="--bg:#2d1836;--fg:#f6eefe;">
+      <div class="num">09</div>
+      <div class="content">
+        
+        <div class="kicker">Interesting</div>
+        <h2>Acetaminophen vs. ibuprofen</h2>
+        
+        <p class="matter">This seems like one of the more useful or interesting Hacker News stories for you today, not just coder-insider chatter.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Fits your taste because it is more interesting, useful, or unusual than the average Hacker News front-page item.</p>
+        <div class="meta">asteriskmag.com</div>
+        <a class="link" href="https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet">Read the story</a>
+      </div>
+    </section>
+    
+
+    <section class="spread theme-bigstat" style="--bg:#ece7ff;--fg:#1b1331;">
+      <div class="num">10</div>
+      <div class="content">
+        
+        <div class="kicker">Interesting</div>
+        <h2>Changes to GitHub Copilot individual plans</h2>
+        
+        <p class="matter">This seems like one of the more useful or interesting Hacker News stories for you today, not just coder-insider chatter.</p>
+        <p class="for-brandon"><strong>Why this fits you:</strong> Fits your taste because it is more interesting, useful, or unusual than the average Hacker News front-page item.</p>
+        <div class="meta">github.blog</div>
+        <a class="link" href="https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/">Read the story</a>
+      </div>
+    </section>
+    
+  <footer class="footer">Generated for Brandon from today’s Hacker News front page, curated to favor AI tools, creative software, privacy, weird science, and actionable stories over coder-insider noise.</footer>
+</body>
+</html>
